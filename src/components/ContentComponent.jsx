@@ -73,7 +73,9 @@ export default function ContentComponent(props) {
 
   return (
     <>
-      <Menu />
+      <div class='sticky top-28 mr-6 hidden h-full w-52 px-3 backdrop-blur-sm md:block'>
+        <Menu />
+      </div>
       <div class='prose w-10/12 max-w-[850px] px-3 backdrop-blur-sm'>
         {/* Component name and description */}
         <header class='mb-5'>
