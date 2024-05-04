@@ -25,7 +25,7 @@ export default function Contributors(props) {
               rel='noopener noreferrer'
             >
               <img
-                class='  inline-block size-24 rounded-full ring-2 ring-orange-100/[0.3] hover:ring-4 hover:ring-orange-100 md:size-36'
+                class='  inline-block size-28 rounded-full ring-2 ring-orange-100/[0.3] hover:ring-4 hover:ring-orange-100 md:size-36'
                 src={`https://github.com/${gitHandle}.png`}
                 style={{ display: 'block' }}
                 alt={`${gitHandle} github avatar`}
