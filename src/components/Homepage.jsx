@@ -9,10 +9,10 @@ import npmLogo from '../../assets/npm-logo-red.svg';
 
 export default () => {
   return (
-    <div class='fixed inset-0 top-40 flex h-full w-full flex-col items-center'>
+    <div class='mt-20 flex h-full w-full flex-col items-center'>
       <div class='mb-8 flex items-center justify-center'>
         <img
-          class='mr-4 block h-44 dark:hidden'
+          class='mr-4 block h-20 md:h-44 dark:hidden'
           src={solibeeLogo}
           alt='the solibee logo: a bee in a honeycomb'
         />
@@ -21,25 +21,25 @@ export default () => {
           src={solibeeLogoDark}
           alt='the solibee logo: a bee in a honeycomb'
         />
-        <h1 class='font-pacifico text-9xl'>Solibee</h1>
+        <h1 class='font-pacifico text-7xl md:text-9xl'>Solibee</h1>
       </div>
-      <p class='mb-8 max-w-4xl text-center text-4xl font-bold'>
+      <p class='mb-8 max-w-4xl text-center text-2xl font-bold md:text-4xl'>
         Speed up your SolidJS development with fully-tested, accessible &
         customizable UI components
       </p>
-      <div>
+      <div class = 'text-center'>
         <a href='/introduction'>
-          <button class='ml-2 mr-2 rounded-xl border-4 border-black bg-orange-100 p-2  pl-5 pr-5 text-xl font-bold hover:border-orange-200 hover:bg-orange-200'>
+          <button class='ml-2 mr-2 rounded-xl border-4 border-black bg-orange-100 p-2  pl-5 pr-5 font-bold hover:border-orange-200 hover:bg-orange-200 md:text-xl'>
             Get Started
           </button>
         </a>
         <a href='/component/accordion'>
-          <button class='ml-2 mr-2 rounded-xl border-4 border-black bg-orange-100 p-2 pl-5  pr-5 text-xl font-bold hover:border-orange-200 hover:bg-orange-200'>
+          <button class='ml-2 mr-2 mt-4  rounded-xl border-4 border-black bg-orange-100 p-2 pl-5  pr-5 font-bold hover:border-orange-200 hover:bg-orange-200 md:text-xl'>
             See an Example
           </button>
         </a>
       </div>
-      <p class='mt-24 text-xl font-bold'>
+      <p class='mt-20 px-4 text-center text-xl font-bold md:mt-24'>
         {' '}
         Open source, now and forever, and built with incredible tools
       </p>
@@ -82,4 +82,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}
