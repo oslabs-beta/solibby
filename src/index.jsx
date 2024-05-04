@@ -5,6 +5,7 @@ import App from './App';
 import { CompContextProvider } from './context/ComponentContext';
 import { StrContextProvider } from './context/StrRepresentationContext';
 import { CompDescriptionContextProvider } from './context/CompDescriptions';
+import { DrawerIsOpenContextProvider } from './context/DrawerIsOpenContextProvider';
 
 const root = document.getElementById('root');
 
@@ -18,9 +19,11 @@ render(
   () => (
     <CompDescriptionContextProvider>
       <CompContextProvider>
-        <StrContextProvider>
-          <App />
-        </StrContextProvider>
+        <DrawerIsOpenContextProvider>
+          <StrContextProvider>
+            <App />
+          </StrContextProvider>
+        </DrawerIsOpenContextProvider>
       </CompContextProvider>
     </CompDescriptionContextProvider>
   ),
