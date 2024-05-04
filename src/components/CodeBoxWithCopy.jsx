@@ -12,5 +12,4 @@ export default function CodeBoxWithCopy(props) {
   //when the copy button is clicked, the text that is inside the box is copied onto the user's clipboard
   //the user's clipboard is then reset to an empty string
 
-  //props.html
 }
