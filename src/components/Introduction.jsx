@@ -5,7 +5,9 @@ import Menu from './Menu';
 export default function Introduction() {
   return (
     <>
-      <Menu />
+      <div class='sticky top-28 mr-6 hidden h-full w-52 px-3 backdrop-blur-sm md:block'>
+        <Menu />
+      </div>
       <article class='prose w-10/12 max-w-[850px] px-3 backdrop-blur-sm'>
         <header>
           <h1 class='mb-4 border-b text-4xl font-bold'>Introduction</h1>
