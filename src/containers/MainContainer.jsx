@@ -15,7 +15,7 @@ export default function MainContainer() {
 
   return (
     //<div class='mx-auto mb-80 flex w-10/12 max-w-3xl grow justify-center overflow-auto pt-10 xl:max-w-none'>
-    <div class='m-10 flex justify-center'>
+    <div id = 'mainContainer' class='m-10 flex justify-center'>
       <Router>
         <Route path='/' component={Homepage} />
         <Route path='*' component={Error404} />
