@@ -30,12 +30,14 @@ export default function CopyButton(props) {
   return (
     <button
       aria-label={`${copied() ? 'Text has been copied' : 'Click to copy text'}`}
-      class={`absolute bottom-1 right-1 flex h-0.5 w-0.5 items-center justify-center rounded px-4 py-4 `}
+      class={
+        'absolute bottom-1 right-1 flex h-0.5 w-0.5 items-center justify-center rounded px-4 py-4 '
+      }
       onClick={copyToClipboard}
     >
       {!copied() && (
         <svg
-          class='absolute'
+          class='absolute size-4 md:size-5'
           id='Copy_24'
           width='24'
           height='24'
@@ -74,7 +76,7 @@ export default function CopyButton(props) {
       )}
       {copied() && (
         <svg
-          class='absolute m-2 h-3 w-3 text-white'
+          class='absolute m-2 size-2 text-white md:size-3'
           xmlns='http://www.w3.org/2000/svg'
           fill='current'
           viewBox='0 0 16 12'
