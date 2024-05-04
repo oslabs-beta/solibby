@@ -14,18 +14,18 @@ export default function Contributors(props) {
 
   //using solid For method
   return (
-    <ul class='m-5 flex flex-wrap justify-center -space-x-2 overflow-hidden p-2'>
+    <ul class='m-5 flex flex-wrap justify-center first:space-x-0 -space-x-2  overflow-hidden p-2'>
       <For each={contributors()}>
         {(gitHandle) => (
           <li class='ml-3'>
             <a
-              class='avatar'
+              class=''
               href={`https://github.com/${gitHandle}`}
               target='_blank'
               rel='noopener noreferrer'
             >
               <img
-                class=' avatar inline-block size-36 rounded-full ring-2 ring-orange-100/[0.3] hover:ring-4 hover:ring-orange-100'
+                class='  inline-block size-24 rounded-full ring-2 ring-orange-100/[0.3] hover:ring-4 hover:ring-orange-100 md:size-36'
                 src={`https://github.com/${gitHandle}.png`}
                 style={{ display: 'block' }}
                 alt={`${gitHandle} github avatar`}
