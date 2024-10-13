@@ -7,11 +7,14 @@ import solibeeLogoDark from '../../assets/solibee-logo-light-v2.png';
 
 
 export default function DrawerMenu() {
+
   const {drawerIsOpen, setDrawerIsOpen} = useContext(DrawerIsOpenContext);
+  
   const isDarkMode = () => {
     console.log(document.documentElement.hasAttribute('data-theme'));
     return document.documentElement.hasAttribute('data-theme');
   };
+  
   return (
     <>
       {/* overlay for the webpage when the drawer is open */}
