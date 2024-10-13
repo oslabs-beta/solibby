@@ -12,7 +12,8 @@ import CodeBoxWithCopy from './CodeBoxWithCopy';
 import Menu from './Menu';
 
 // custom components
-import Accordion from '../lib/accordion/Accordion';
+// import Accordion from '../lib/accordion/Accordion';
+import Accordion from '../lib/accordion/Accordion'
 import InputForm from '../lib/inputForm/InputForm';
 import InputFile from '../lib/inputForm/InputFile';
 import GenerateOTP from '../lib/inputForm/GenerateOTP';
